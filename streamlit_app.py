@@ -7,7 +7,9 @@ st.markdown("# Intent Example Finder")
 st.markdown("Use the selector in the sidebar to construct NLU data as a starting point.")
 
 st.sidebar.markdown("Made with love over at [Rasa](https://rasa.com/).")
-st.image("https://rasahq.github.io/rasa-nlu-examples/square-logo.svg")
+st.sidebar.image(
+    "https://rasahq.github.io/rasa-nlu-examples/square-logo.svg", width=100
+)
 
 clump = (Clumper.read_yaml("*/nlu.yml")
          .unpack("nlu"))
